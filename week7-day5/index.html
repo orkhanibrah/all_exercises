@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div name = 'main'>
+        <button onClick="generateQuote()">Generate Quote</button><br/>
+        <button onClick="withSpaces()">Quote length with space</button><br/>
+        <button onClick="withoutSpaces()">Quote length without space</button><br/>
+        <button onClick="numberOfWords()">Number of words in the quote</button>
+    </div>
+    <form>
+        <label for>Author</label>
+        <input type="text" onchange="inputAuthor(event)"/><br />
+        <label>Quote</label>
+        <input type="text" onchange="inputQuote(event)"/>
+        <button onClick="addQuote(event)">Add quote</button>
+        <button name='likebutton' onClick="addLike(event)">Like</button>
+    </form>
+
+    <script src = 'index.js'></script>
+</body>
+</html>
